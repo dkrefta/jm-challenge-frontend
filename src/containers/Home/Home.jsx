@@ -21,16 +21,15 @@ text-align: center;
 justify-content: center;
 `
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;F
+align-items: center;
 `;
 
 class Home extends Component {
-    state = {
+    state = {}
 
-    }
     render() {
         return (
             <Background>
@@ -45,11 +44,10 @@ class Home extends Component {
                         onClick={() => { this.props.history.replace('/cnpj') }}
                     >
                         Iniciar
-        </Button>
+                    </Button>
                 </Wrapper>
             </Background>
         )
-
     }
 }
 
