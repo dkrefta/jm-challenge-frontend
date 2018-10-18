@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MaskedInput from './SampleForm.jsx';
+import Input from './SampleForm.jsx';
 
 describe('Input', () => {
  it('should be defined', () => {
@@ -8,7 +8,7 @@ describe('Input', () => {
  });
  it('should render correctly', () => {
    const tree = shallow(
-     <MaskedInput name='input test' />
+     <Input name='input test' />
    );
    expect(tree).toMatchSnapshot();
  });
