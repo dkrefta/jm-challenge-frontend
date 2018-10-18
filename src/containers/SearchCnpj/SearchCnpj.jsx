@@ -144,7 +144,7 @@ class SearchCnpj extends Component {
                     </Wrapper>
                     <LabelWrapper>
 
-                    <Label htmlFor={name}>{"CNPJ / Empresa"}</Label>
+                        <Label htmlFor={name}>{"CNPJ / Empresa"}</Label>
                     </LabelWrapper>
                     <InputWrapper>
                         {isCnpjValid !== null
@@ -174,12 +174,13 @@ class SearchCnpj extends Component {
                         />
                     </InputWrapper>
                     <ButtonWrapper>
-                        <Button  
+                        <Button
                             icon={"arrow-right"}
                             type='button'
                             onClick={() => this.handleSubmit()}
                             disabled={!isCnpjValid}
-                            background={'blue'}
+                            background={'#00CED1'}
+                            color={'#fff'}
                         >
                             OK
                   </Button>
