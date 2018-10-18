@@ -15,6 +15,7 @@ const Avatar = styled.div`
   line-height: 32px;
   border-radius: 50%;
   background-color: #f2f6f8;
+  margin-right: 10px;
 `;
 const Content = styled.div`
   display: flex;
@@ -32,26 +33,25 @@ const Information = styled.div`
   color: #fff;
   & > span {
     font-size: 0.875rem;
+    padding-left: 50px
   }
   & > small {
     font-size: 0.75rem;
+    padding-left: 50px
   }
 `;
-
-const IconWrapper = styled(Icon)`
-  fill: #f2f6f8;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 2rem;
-`;
-
+  const IconStyle = styled(Icon) `
+  padding-left: 20px;
+  height: 100px;
+  background-color: #f2f6f8;
+  `
 
 
 const Header = () => (
     <Nav>
       <Container>
   <Content>
-      <Icon tag="line-chart" />
+      <IconStyle tag="line-chart" />
       <Information>
         <span> Nova Cotação</span>
         <small>#0980</small>

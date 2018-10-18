@@ -21,6 +21,9 @@ border: none;
 font-size: 1rem;
 outline: none;
 font-weight: 600;
+height: 60px;
+justify-content: space-between; 
+display: flex;
 `;
 
 const Container = styled.div`
@@ -29,6 +32,7 @@ border: none;
 font-size: 1rem;
 outline: none;
 font-weight: 600;
+height: 80px;
 `;
 
 const Input = props => {
