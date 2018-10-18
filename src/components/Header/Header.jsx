@@ -42,8 +42,6 @@ const Information = styled.div`
 `;
   const IconStyle = styled(Icon) `
   padding-left: 20px;
-  height: 100px;
-  background-color: #f2f6f8;
   `
 
 
