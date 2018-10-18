@@ -70,6 +70,9 @@ flex-direction: row;
 display: flex;
 `
 const Error = styled.div`
+right: 0;
+top: 0;
+position: absolute;
 color: red;
 justify-content: flex-end;
 flex-direction: row;
@@ -125,7 +128,6 @@ class SearchCnpj extends Component {
     handleSubmit = () => {
         const { isCnpjValid } = this.state;
         console.log('Valido:', isCnpjValid)
-        this.props.history.push('/')
     };
 
     changePage() {
