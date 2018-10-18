@@ -145,7 +145,6 @@ class SearchCnpj extends Component {
                     <StepNumber>1</StepNumber>
                     </Wrapper>
                     <LabelWrapper>
-
                         <Label htmlFor={name}>{"CNPJ / Empresa"}</Label>
                     </LabelWrapper>
                     <InputWrapper>

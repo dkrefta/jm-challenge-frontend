@@ -21,7 +21,6 @@ const Button = styled.button.attrs({
   margin-bottom: 30px; 
   justify-content: space-between; 
   display: flex;
-  width: 80%;
   background: ${({ background }) => background || '#fff'};
   color: ${({ color }) => color || '#9779f1'};
   cursor: ${({ disabled }) => (!!disabled ? 'default' : 'pointer')};

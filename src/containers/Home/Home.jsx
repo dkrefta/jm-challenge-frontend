@@ -26,15 +26,18 @@ flex-direction: column;
 justify-content: space-between;F
 align-items: center;
 `;
-
+const IconStyle = styled.div`
+text-align: center;
+`
 class Home extends Component {
     state = {}
-
     render() {
         return (
             <Background>
                 <Wrapper>
+                    <IconStyle>
                     <Icon tag="line-chart" />
+                    </IconStyle>
                     <WrapperText>
                         <h1>Cotação de Seguros </h1>
                         <h2>Solução inovadora de líder de mercado </h2>
