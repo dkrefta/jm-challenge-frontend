@@ -1,9 +1,8 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 import { withFormik } from 'formik';
-import { Form, Title, Text, Button } from "../styles/theme.js";
+import { Form, Title, Text, Button } from "../../styles/theme.js";
 import MaskedInput from 'react-text-mask';
-import validate from './validate';
 
 
 const Wrapper = styled.div`
@@ -23,6 +22,7 @@ font-size: 1rem;
 outline: none;
 font-weight: 600;
 `;
+
 const Container = styled.div`
 padding: 0;
 border: none;
@@ -32,7 +32,7 @@ font-weight: 600;
 `;
 
 const Input = props => {
-  
+
   const {
     values,
     touched,
@@ -46,25 +46,21 @@ const Input = props => {
     placeholder,
     label
   } = props;
-  
-  return (
-      <MaskedInput 
-       validate={validate}
-       label={label}
-       placeholder={placeholder}
-        id="cnpj"
-        name='cnpj'
-        type="text"
-        mask={mask}
-        error={touched && errors}
-        value={values}
-        onChange={onChange}
-        onBlur={handleBlur}
-        render={(ref, props) => <InputCustom ref={ref} {...props} />}
-      />
-  
-      
 
+  return (
+    <MaskedInput
+      label={label}
+      placeholder={placeholder}
+      id="cnpj"
+      name='cnpj'
+      type="text"
+      mask={mask}
+      error={touched && errors}
+      value={values}
+      onChange={onChange}
+      onBlur={handleBlur}
+      render={(ref, props) => <InputCustom ref={ref} {...props} />}
+    />
   );
 };
 

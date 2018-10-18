@@ -10,7 +10,7 @@ class Auth extends Component {
     const { children } = this.props;
     return (
       <React.Fragment>
-      <GlobalStyle />
+        <GlobalStyle />
         {children}
       </React.Fragment>
     );

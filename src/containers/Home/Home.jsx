@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Button from '../../components/Button/Button';
 import styled from 'styled-components'
+import Icon from '../../components/Icon/Icon'
 import { Link } from 'react-router-dom';
 import { Form, Input, Title, Title2, Text, Label } from "../../styles/theme.js";
 
@@ -13,8 +14,10 @@ flex: 1;
 height: 100vh;
 `
 const WrapperText = styled.div`
-margin-bottom: 80px;
+margin-top: 80px;
+margin-bottom: 60px;
 align-items: center;
+text-align: center;
 justify-content: center;
 `
 const Wrapper = styled.div`
@@ -25,28 +28,29 @@ const Wrapper = styled.div`
 `;
 
 class Home extends Component {
-  state = {
+    state = {
 
-  }
-  render () {
-    return (
-      <Background>
-      <Wrapper>
-        <WrapperText>
-        <h1  style={{ marginTop: '30px', textAlign: 'center' }}>Cotação de Seguros </h1> 
-        <h2>Solução inovadora de líder de mercado </h2>
-        </WrapperText>
-        <Button
-           icon="arrow-right2" 
-          onClick={()=> {this.props.history.replace('/cnpj')}}
-        >
-        Iniciar
+    }
+    render() {
+        return (
+            <Background>
+                <Wrapper>
+                    <Icon tag="line-chart" />
+                    <WrapperText>
+                        <h1>Cotação de Seguros </h1>
+                        <h2>Solução inovadora de líder de mercado </h2>
+                    </WrapperText>
+                    <Button
+                        icon="arrow-right2"
+                        onClick={() => { this.props.history.replace('/cnpj') }}
+                    >
+                        Iniciar
         </Button>
-      </Wrapper>
-      </Background>
-    )
+                </Wrapper>
+            </Background>
+        )
 
-  }
+    }
 }
 
 export default Home;

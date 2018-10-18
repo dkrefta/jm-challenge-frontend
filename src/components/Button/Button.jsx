@@ -29,8 +29,6 @@ const Button = styled.button.attrs({
   display: flex;
   width: 80%;
   background: ${({ background }) => background || '#fff'};
-  border: ${({ border }) => border || '1px solid #121212'};
-  box-shadow: ${({ boxShadow }) => boxShadow || boxShadowDefault};
   color: ${({ color }) => color || '#9779f1'};
   cursor: ${({ disabled }) => (!!disabled ? 'default' : 'pointer')};
   font-size: ${({ size }) => {
@@ -51,10 +49,8 @@ const Button = styled.button.attrs({
         return '20px 30px';
     }
   }};
-  text-transform: ${({ textTransform }) => textTransform || 'uppercase'};
   &:hover:enabled {
     background: ${({ hoverBg }) => hoverBg || '#D3D3D3'};
-    border: ${({ hoverBorder }) => `${hoverBorder}` || '1px solid #121212'};
     color: ${({ hoverColor }) => hoverColor || '#9779f1'};
   }
 `;
