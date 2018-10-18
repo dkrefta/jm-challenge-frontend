@@ -9,10 +9,10 @@ const Wrapper = styled.div`
 display: flex;
 `
 const Label = styled.label`
-  color: #b4bbc0;
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-bottom: 0.50rem;
+color: #b4bbc0;
+font-size: 0.75rem;
+font-weight: 600;
+margin-bottom: 0.50rem;
 `;
 
 const InputCustom = styled.input`

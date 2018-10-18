@@ -18,6 +18,7 @@ const ButtonComponent = props => (
 const Button = styled.button.attrs({
   className: `form-button`
 })`
+  width: 100%;
   margin-bottom: 30px; 
   justify-content: space-between; 
   display: flex;
