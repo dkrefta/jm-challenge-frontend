@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest --watchAll",
-    "start": "parcel src/index.html -d dev --port ( PORT || 3000 )",
+    "start": "parcel src/index.html -d dev --port $PORT",
     "build": "parcel build src/index.html"
   },
   "jest": {
